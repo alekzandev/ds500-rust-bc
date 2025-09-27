@@ -11,8 +11,8 @@ You'll be building a single, evolving project over 6 weeks that demonstrates mas
 ### Week 1: Development Environment Setup
 - [x] Fork the template repository
 - [x] Set up your development environment (VS Code, rust-analyzer, etc.)
-- [ ] Initialize your project structure
-- [ ] Get familiar with Cargo and basic Rust tooling
+- [x] Initialize your project structure
+- [x] Get familiar with Cargo and basic Rust tooling
 
 **Focus**: Environment setup, basic project structure, getting comfortable with Rust tooling
 

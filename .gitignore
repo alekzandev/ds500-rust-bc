@@ -1,0 +1,13 @@
+# VSCode
+.vscode
+
+# Copilot
+**/.copilot/
+
+# Rust
+**/target/
+**/*.rs.bk
+**/*.rmeta
+**/*.lock
+**/*.log
+**/*.tmp

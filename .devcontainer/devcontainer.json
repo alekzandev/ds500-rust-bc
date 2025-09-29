@@ -1,0 +1,46 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/alpine
+{
+	"name": "Rust",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	// "image": "mcr.microsoft.com/devcontainers/base:alpine-3.21",
+	// "features": {
+	// 	"ghcr.io/devcontainers/features/rust:1": {}
+	// }
+	"build": {
+		"dockerfile": "Dockerfile",
+		// Update 'context' to change the build context (see https://aka.ms/vscode-remote/containers/docker-build-context).
+		"context": ".."
+		// Use 'args' to set build arguments (see https://aka.ms/vscode-remote/containers/containers-advanced#_build-args).
+		// "args": { "VARIANT": "3-bullseye" }
+	},
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			// List of extensions to install in the container.
+			"extensions": [
+				"Github.copilot",
+				"rust-lang.rust-analyzer",
+				"serayuz.rust-test-lens"
+			],
+			"settings": {
+				"rust-analyzer.cargo.loadOutDirsFromCheck": true,
+				"rust-analyzer.procMacro.enable": true,
+				"rust-analyzer.cargo.autoreload": true
+			}
+		}
+	}
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
